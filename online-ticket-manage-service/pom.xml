@@ -10,6 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+
     <groupId>base</groupId>
     <artifactId>online-ticket-manage-service</artifactId>
     <version>1.0-SNAPSHOT</version>
