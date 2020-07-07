@@ -1,7 +1,9 @@
 package com.ticketManage.entity;
 
+import javax.persistence.Table;
 import java.io.Serializable;
 
+@Table(name = "manage_infor")
 public class ManageInfor implements Serializable{
         //主键 id
         private Integer id;
@@ -11,7 +13,6 @@ public class ManageInfor implements Serializable{
         private String manage_password;
         //管理员权限
         private String manage_type;
-
 
         public Integer getId() {
                 return id;

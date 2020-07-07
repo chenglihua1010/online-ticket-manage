@@ -1,6 +1,6 @@
 package com.ticketManage.service.impl;
 
-import com.ticketManage.service.UserInforInterface;
+import com.ticketManage.api.service.UserInforInterface;
 
 public class UserInforImpl implements UserInforInterface{
 }

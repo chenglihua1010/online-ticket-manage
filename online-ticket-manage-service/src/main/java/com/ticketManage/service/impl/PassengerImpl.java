@@ -1,6 +1,6 @@
 package com.ticketManage.service.impl;
 
-import com.ticketManage.service.PassengerInterface;
+import com.ticketManage.api.service.PassengerInterface;
 
 public class PassengerImpl implements PassengerInterface {
 }

@@ -1,6 +1,6 @@
 package com.ticketManage.service.impl;
 
-import com.ticketManage.service.TrainInforInterface;
+import com.ticketManage.api.service.TrainInforInterface;
 
 public class TrainInforImpl implements TrainInforInterface {
 }
