@@ -4,6 +4,6 @@ import com.ticketManage.api.vo.ManageInforVo;
 
 import java.util.List;
 
-public interface ManagerInforInterface {
+public interface ManageInforInterface {
          List<ManageInforVo> findAllManage();
 }

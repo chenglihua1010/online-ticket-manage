@@ -1,9 +1,9 @@
 package com.ticketManage.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.ticketManage.api.service.ManagerInforInterface;
+import com.ticketManage.api.service.ManageInforInterface;
 import com.ticketManage.api.vo.ManageInforVo;
-import com.ticketManage.service.impl.MangerInforImpl;
+import com.ticketManage.service.impl.MangeInforImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,15 +20,12 @@ public class ManageInforController {
 
 //          @Resource(name = "mangerInforImpl")
         @Autowired
-         MangerInforImpl mangerInforImpl;
-
-
-
+        MangeInforImpl mangeInforImpl;
 
         @RequestMapping("/findAllManage")
         @ResponseBody
         public List<ManageInforVo> findAllManage(){
-                List<ManageInforVo> manageInforVoList=mangerInforImpl.findAllManage();
+                List<ManageInforVo> manageInforVoList=mangeInforImpl.findAllManage();
                 System.out.println(manageInforVoList.size());
                 return manageInforVoList;
         }

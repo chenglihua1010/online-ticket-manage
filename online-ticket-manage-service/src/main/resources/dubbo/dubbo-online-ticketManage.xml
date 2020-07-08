@@ -21,8 +21,8 @@
     <dubbo:service interface="com.ticketManage.api.service.DubboService" ref="dubboService"/>
     <bean id="dubboService" class="com.ticketManage.service.impl.DubboServiceImpl"/>
 
-    <dubbo:service interface="com.ticketManage.api.service.ManagerInforInterface" ref="mangerInforImpl"/>
-    <bean id="mangerInforImpl" class="com.ticketManage.service.impl.MangerInforImpl"/>
+    <dubbo:service interface="com.ticketManage.api.service.ManageInforInterface" ref="mangerInforImpl"/>
+    <bean id="mangerInforImpl" class="com.ticketManage.service.impl.MangeInforImpl"/>
 
     <!--<dubbo:reference id="dubboService" interface="com.wwclr.api.service.DubboService"/>-->
     <!--<dubbo:reference id="busUserInterface" interface="com.wwclr.api.service.BusUserInterface"/>-->
