@@ -3,17 +3,27 @@
 <mapper namespace="com.ticketManage.mapper.ManageInforMapper">
     <resultMap id="BaseResultMap" type="com.ticketManage.entity.ManageInfor">
         <!--
-          WARNING - @mbg.generated
+          column代表数据库的列名，property代表我们实体类的列名
         -->
         <result column="id" jdbcType="INTEGER" property="id" />
-        <result column="manage_accountId" jdbcType="VARCHAR" property="manage_accountId" />
-        <result column="manage_password" jdbcType="VARCHAR" property="manage_password" />
-        <result column="manage_type" jdbcType="VARCHAR" property="manage_type" />
+        <result column="manage_accountId" jdbcType="VARCHAR" property="manageAccountId" />
+        <result column="manage_password" jdbcType="VARCHAR" property="managePassword" />
+        <result column="manage_type" jdbcType="VARCHAR" property="manageType" />
     </resultMap>
 
-    <select id="findAllManage" resultType="com.ticketManage.entity.ManageInfor">
-    <![CDATA[
-SELECT * FROM manage_infor
- ]]>
-    </select>
-</mapper>
+
+    <!-- 默认拿ManageInfor实体类作为字段映射为我们的字段映射-->
+    <!--<select id="findAllManage" resultType="com.ticketManage.entity.ManageInfor">-->
+    <!--<![CDATA[-->
+<!--SELECT * FROM manage_infor-->
+ <!--]]>-->
+    <!--</select>-->
+
+
+    <!-- 直接选择 resultMap="BaseResultMap" 作为我们的字段映射-->
+     <select id="findAllManage" resultMap="BaseResultMap">
+         <![CDATA[
+ SELECT * FROM manage_infor
+  ]]>
+     </select>
+ </mapper>
