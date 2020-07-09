@@ -15,6 +15,7 @@
     <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address}"/>
     <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}"/>
 
+
     <dubbo:reference id="dubboService1" interface="com.ticket.api.service.DubboService1"/>
 
     <!--将自己的api service 和service Impl 关联起来-->
